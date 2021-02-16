@@ -32,6 +32,7 @@ class Movable {
 };
 
 // 変換コンストラクタ (値を一つだけ受け取るコンストラクタ)
+// 暗黙的な型変換で使用されないようにするには 変換コンストラクタに explicit をつけます。
 class Square {
     public:
         explicit Square(int size) : size_(size) {}
